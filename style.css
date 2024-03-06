@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Handlee|Courgette|Lora|Nunito|Lato|Ubuntu|Raleway|Open+Sans|Arial');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-style: none;
+    list-style: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000746;
+}
+
+button {
+    border: none;
+    padding: 0;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Navbar */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+    margin: 0 40px;
+}
+
+nav a {
+    padding: 3px;
+    text-decoration: none;
+    color: #303133;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+nav button {
+    font-size: 16px;
+    border-radius: 12px;
+    color: aliceblue;
+    width: 15%;
+    height: 25px;
+    background-color: #000746;
+    text-align: center;
+    margin-left: -190px; /* Espaçamento entre Botão deorçamento e ancoras da NavBar - Tamanho para monitores */
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 500px;
+    background-color: #000746;
+    margin-bottom: 38px;
+}
+
+header img {
+    height: 500px;
+    width: 100%;
+}
+
+/* Section 1 */
+section .aquecedores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aquecedores-btn {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+}
+
+section .aquecedores-btn img {
+    width: 25%;
+}
+
+.aquecedores .btn-loja {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border-radius: 12px;
+    color: #000746;
+    width: 15%;
+    height: 25px;
+    background-color: #ffffff;
+    text-align: center;
+    border: 1px solid #000746;
+}
+
+/* Sobre */
+.sobre {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre h2 {
+    color: #000746;
+    margin-bottom: 35px;
+}
+
+.sobre-corpo {
+    display: flex;
+    padding: 0 60px;
+}
+
+.sobre-corpo p {
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.sobre-corpo img {
+    border-radius: 10px;
+}
+
+/* Entrar em Contato BTN */
+
+.entrar-em-contato {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+section button {
+    font-size: 28px;
+    border-radius: 12px;
+    color: aliceblue;
+    width: 30%;
+    background-color: #000746;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #000d86;
+    color: aliceblue;
+}
+
+footer a, h2 {
+    color: rgb(212, 212, 212);
+    text-decoration: none;
+}
+
+footer h2 {
+    margin-top: 30px;
+    font-size: 35px;
+}
+
+/* Redes sociais */
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.redes-sociais div {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    font-size: 18px;
+}
+
+footer img {
+    filter: invert(100%);
+}
+
+hr {
+    width: 90%;
+}
+
+.redes-sociais p {
+    margin: 10px 0;
+    color: aliceblue;
+}
+
+.redes-sociais .gabriel-rosa {
+    border-bottom: 1px solid white;
+}
+
+/* Animações */
+
+/* NAV BTNS */
+.nav-btn a {
+    position: relative;
+    color: #000746;
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.nav-btn a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000746;
+    transition: width 0.3s ease-out;
+}
+
+.nav-btn a:hover::after {
+    width: 100%;
+}
+
+/* Imagem aquecedores */
+/* Estilo para a seção de aquecedores */
+.aquecedores-btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Estilo para as imagens de aquecedores com animação de flutuação */
+.aquecedores-btn img {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+    margin: 0;
+    animation: floatAnimation 5s infinite ease-in-out;
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Estilo para o botão Loja com animação de aumento no hover */
+.btn-loja {
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-loja:hover {
+    transform: scale(1.1); /* Ajuste o fator de escala conforme necessário */
+}
+
+/* Estilo para o botão "Entre em Contato" com animação de aumento no hover */
+.entrar-em-contato button {
+    transition: transform 0.3s ease-in-out;
+}
+
+.entrar-em-contato button:hover {
+    transform: scale(1.1); /* Ajuste o fator de escala conforme necessário */
+}
+
+/* Mobile */
+
+/* regra geral para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    /* Navbar */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+
+    nav button {
+        display: none;
+    }
+
+    /* Header */
+    header {
+        height: auto;
+    }
+
+    header img {
+        height: auto;
+    }
+
+    /* Section 1 */
+    section .aquecedores-btn img {
+        width: 30%; 
+    }
+
+    section .aquecedores .btn-loja {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    /* Sobre */
+    .sobre-corpo {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .sobre-corpo p {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .sobre-corpo img {
+        width: 100%;
+    }
+
+    /* Entrar em Contato BTN */
+    .entrar-em-contato button {
+        width: 80%;
+    }
+
+    /* Footer */
+    footer {
+        padding: 20px;
+    }
+
+    footer h2 {
+        font-size: 28px;
+        margin-top: 20px;
+    }
+
+    .redes-sociais div {
+        margin: 10px;
+    }
+
+    .redes-sociais p {
+        margin: 5px 0;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    
+}
