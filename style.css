@@ -17,6 +17,10 @@ button {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1, h2, h3, h4 {
     color: #000746;
 }
@@ -27,36 +31,82 @@ p {
 
 /* Navbar */
 
-nav {
+.navbar {
+    background-color: #ffffff;
+    padding: 15px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 9vh;
-    margin: 0 40px;
 }
 
-nav a {
-    padding: 3px;
-    text-decoration: none;
-    color: #303133;
-    font-size: 16px;
-    font-weight: 600;
+.hamburger {
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
 }
 
-nav button {
-    font-size: 16px;
-    border-radius: 12px;
-    color: aliceblue;
-    width: 15%;
-    height: 25px;
+.line {
+    width: 30px;
+    height: 3px;
     background-color: #000746;
-    text-align: center;
-    margin-left: -190px; /* Espaçamento entre Botão deorçamento e ancoras da NavBar - Tamanho para monitores */
+    margin: 6px 0;
 }
 
-nav button a {
-    color: aliceblue;
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 10px;
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000746;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    flex-direction: column;
+}
+
+.has-dropdown:hover .dropdown {
+    display: flex;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid #1b1b1b;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #fff;
+        z-index: 1;
+    }
+
+    .menu.show {
+        display: flex;
+    }
 }
 
 /* Header */
@@ -69,6 +119,10 @@ header {
 header img {
     height: 500px;
     width: 100%;
+}
+
+.banner-mobile {
+    display: none;
 }
 
 /* Section Numeros */
@@ -126,6 +180,16 @@ header img {
     border-radius: 20px;
     padding: 5px;
     font-size: 25px;
+}
+
+.btn-saibaMais-anos:hover {
+    transform: scale(1.1);
+    background-color: #000746;
+    border: none;
+}
+
+.btn-saibaMais-anos:hover a {
+    color: white;
 }
 
 /* Direita */
@@ -250,14 +314,17 @@ section .aquecedores-btn img {
 }
 
 
-
-/* Entrar em Contato BTN */
+/* Entrar em Contato BTN - Sobre */
 
 .texto-experiencia {
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin-bottom: 40px;
+}
+
+.sobre h2 {
+    font-size: 31px;
 }
 
 .texto-experiencia button {
@@ -276,6 +343,14 @@ section .aquecedores-btn img {
     align-items: center;
     text-align: center;
     color: #000746;
+}
+
+.texto-experiencia button:hover {
+    background-color: #000746;
+}
+
+.texto-experiencia a:hover {
+    color: white;
 }
 
 /* Avaliações */
@@ -301,85 +376,64 @@ section .aquecedores-btn img {
     margin-top: -20px;
 }
 
-@keyframes growAndShrink {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.2);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  
-  .carousel-slide {
-    animation: growAndShrink 12s infinite;
-  }
-  
-  .carousel-slide:nth-child(1) {
-    animation-delay: 0s; /* Primeiro slide inicia imediatamente */
-  }
-  
-  .carousel-slide:nth-child(2) {
-    animation-delay: 4s; /* Segundo slide inicia após 4 segundos */
-  }
-  
-  .carousel-slide:nth-child(3) {
-    animation-delay: 8s; /* Terceiro slide inicia após 8 segundos */
-  }
-  
 
+
+/* Parceiros */
+.parceiros h2 {
+    font-size: 31px;
+    margin-bottom: -70px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #000746;
+}
+
+.banner-parceiros {
+    width: 100%;
+    height: 12rem;
+    background-color: #fff;
+    margin: 4rem auto 0 auto;
+    display: flex;
+    padding: 1rem;
+    overflow: auto;
+    justify-content: flex-start; /* Alinhar as divs no início do container */
+    align-items: center;
+}
+
+.banner-parceiros div {
+    flex: 0 0 auto;
+    width: 12rem;
+    height: 8rem;
+    margin-right: 2rem; /* Adicionei uma margem à direita */
+}
+
+.banner-parceiros div:first-child {
+    margin-left: 2rem; /* Adicionei uma margem à esquerda para a primeira div */
+}
+
+.banner-parceiros div:last-child {
+    margin-right: 0;
+}
+
+.banner-parceiros div img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 /* Footer */
 footer {
-    background-color: #000d86;
+    background-color: #182F45;
     color: aliceblue;
 }
 
-footer a, h2 {
-    color: rgb(212, 212, 212);
-    text-decoration: none;
+footer h3 {
+    color: white;
 }
 
-footer h2 {
-    margin-top: 30px;
-    font-size: 35px;
+.footer-quemSomos p {
+    color: #fff;
 }
-
-/* Redes sociais */
-.redes-sociais {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.redes-sociais div {
-    display: flex;
-    flex-direction: column;
-    margin: 15px;
-    font-size: 18px;
-}
-
-footer img {
-    filter: invert(100%);
-}
-
-hr {
-    width: 90%;
-}
-
-.redes-sociais p {
-    margin: 10px 0;
-    color: aliceblue;
-}
-
-.redes-sociais .gabriel-rosa {
-    border-bottom: 1px solid white;
-}
-
 /* Animações */
 
 /* NAV BTNS */
@@ -453,18 +507,7 @@ hr {
 /* regra geral para dispositivos móveis */
 @media only screen and (max-width: 600px) {
     /* Navbar */
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    nav a {
-        margin: 10px 0;
-    }
-
-    nav button {
-        display: none;
-    }
 
     /* Header */
     header {
