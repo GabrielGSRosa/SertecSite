@@ -5,7 +5,6 @@
     margin: 0;
     padding: 0;
     font-style: none;
-    list-style: none;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #000746;
 }
@@ -18,12 +17,20 @@ button {
     cursor: pointer;
 }
 
+h1, h2, h3, h4 {
+    color: #000746;
+}
+
+p {
+    color: #1b1b1b;
+}
+
 /* Navbar */
 
 nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 9vh;
     margin: 0 40px;
@@ -48,18 +55,82 @@ nav button {
     margin-left: -190px; /* Espaçamento entre Botão deorçamento e ancoras da NavBar - Tamanho para monitores */
 }
 
+nav button a {
+    color: aliceblue;
+}
+
 /* Header */
 
 header {
     width: 100%;
     height: 500px;
-    background-color: #000746;
-    margin-bottom: 38px;
 }
 
 header img {
     height: 500px;
     width: 100%;
+}
+
+/* Section Numeros */
+/* Esquerda */
+.numeros {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.numeros-esquerda p, span {
+    color: #1b1b1b;
+}
+
+.numeros-esquerda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.icons-e-numeros {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.instalacoes, .manutencoes, .clientes {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.anosDeExperiencia{
+    display: flex;
+    flex-direction: row;
+    line-height: 1;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.anosDeExperiencia span {
+    font-size: 60px;
+    font-weight: bold;
+    color: #1b1b1b;
+}
+
+.btn-saibaMais-anos {
+    border: 1px solid #000746;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 25px;
+}
+
+/* Direita */
+.numeros-direita img {
+    border-radius: 20px 0 0 20px;
 }
 
 /* Section 1 */
@@ -71,16 +142,16 @@ section .aquecedores {
 
 .aquecedores-btn {
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     display: flex;
 }
 
 section .aquecedores-btn img {
-    width: 25%;
+    width: 20%;
 }
 
 .aquecedores .btn-loja {
-    margin-top: 30px;
+    margin: 30px 0 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,6 +164,63 @@ section .aquecedores-btn img {
     text-align: center;
     border: 1px solid #000746;
 }
+
+/* Sertec Aquecendo Vidas */
+.aquecendoVidas-container {
+    background-color: #E6E6E6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloAquecendoVidas h2 {
+    margin-top: 20px;
+    font-size: 42px;
+    text-align: center;
+    color: #0B567E;
+}
+
+.tituloAquecendoVidas h3 {
+    font-size: 35px;
+    text-align: center;
+    color: #1b1b1b;
+    margin-bottom: 20px;
+}
+
+.conteudos-aquecendoVidas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.conteudos-aquecendoVidas p {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: -40px;
+}
+
+.conteudos-aquecendoVidas ul li {
+    color: #1b1b1b;
+    font-size: 26px;
+    font-weight: bold;
+    margin-right: 100px; 
+}
+
+.conteudos-aquecendoVidas ul li span {
+    color: #0B567E;
+}
+
+.aquecendoVidas-direita {
+    display: flex;
+    margin: 20px 0 30px 60px;
+}
+
+.aquecendoVidas-direita img {
+    border-radius: 50px;
+}
+
+  
+
 
 /* Sobre */
 .sobre {
@@ -121,22 +249,87 @@ section .aquecedores-btn img {
     border-radius: 10px;
 }
 
+
+
 /* Entrar em Contato BTN */
 
-.entrar-em-contato {
+.texto-experiencia {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin-bottom: 40px;
 }
 
-section button {
+.texto-experiencia button {
     font-size: 28px;
-    border-radius: 12px;
-    color: aliceblue;
-    width: 30%;
-    background-color: #000746;
+    border-radius: 18px;
+    width: 50%;
+    background-color: #ffffff;
     text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border: solid 1px #000746;
 }
+
+.texto-experiencia button a {
+    align-items: center;
+    text-align: center;
+    color: #000746;
+}
+
+/* Avaliações */
+.carousel-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carousel-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #4e4e4e;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 25px;
+    max-width: 200px;
+}
+
+.carousel-slide img {
+    width: 60px;
+    margin-top: -20px;
+}
+
+@keyframes growAndShrink {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .carousel-slide {
+    animation: growAndShrink 12s infinite;
+  }
+  
+  .carousel-slide:nth-child(1) {
+    animation-delay: 0s; /* Primeiro slide inicia imediatamente */
+  }
+  
+  .carousel-slide:nth-child(2) {
+    animation-delay: 4s; /* Segundo slide inicia após 4 segundos */
+  }
+  
+  .carousel-slide:nth-child(3) {
+    animation-delay: 8s; /* Terceiro slide inicia após 8 segundos */
+  }
+  
+
 
 /* Footer */
 footer {
