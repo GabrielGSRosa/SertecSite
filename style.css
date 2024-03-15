@@ -29,6 +29,18 @@ p {
     color: #1b1b1b;
 }
 
+#whatsappBtn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 /* Navbar */
 
 .navbar {
