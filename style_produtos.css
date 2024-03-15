@@ -151,3 +151,65 @@ header hr {
 .produtoSegmento img {
     width: 50%;
 }
+
+/* Footer */
+footer {
+    background-color: #182F45;
+    text-align: start;
+}
+
+footer img {
+    width: 27vh;
+}
+
+footer p{
+    color: #fff;
+    font-size: 18px;
+}
+
+footer h3 {
+    color: #fff;
+    font-size: 21px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer div {
+    padding: 20px;
+}
+
+footer div p {
+    padding: 5px;
+}
+
+.containerFooter {
+    display: flex;
+    justify-content: center;
+    margin-left: -202px;
+}
+
+.quemSomosFooter {
+    width: 20%;
+    border-right: 1px solid white;
+}
+
+.venhaNosConhecer {
+    width: 20%;
+}
+
+.desenvolvimento {
+    align-items: center;
+    text-align: center;
+}
+
+.desenvolvimento p {
+    margin-top: -40px;
+}
+
+.linhaTop {
+    margin: 0 auto;
+    border-top: 1px solid white;
+    width: 60%;
+}
