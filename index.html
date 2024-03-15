@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos</title>
-    <link rel="stylesheet" href="style_produtos.css">
+    <title>SERTEC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js"></script>
+    <link rel="shortcut icon" href="https://scontent.fcgh33-1.fna.fbcdn.net/v/t39.30808-1/327222198_909343636760716_7374527331472852899_n.png?stp=dst-png_p200x200&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=8FGOJNJhewAAX8M_VIV&_nc_ht=scontent.fcgh33-1.fna&oh=00_AfCL3FLlZtbC16OP-m3UePSjo4pomivOKTNPWRGVZO8pgg&oe=65EC9528" type="image/x-icon">
 </head>
 <body>
     <nav class="navbar">
@@ -16,7 +18,7 @@
             <ul class="menu" id="menu">
             <li><a href="./index.html">HOME</a></li>
             <li class="has-dropdown">
-                    <a href="">PRODUTOS</a>
+                    <a href="./produtos.html">PRODUTOS</a>
                     <div class="dropdown">
                         <a>Aquecedores</a>
                         <a>Bombas</a>
@@ -31,71 +33,163 @@
                 <li></li><a href="https://api.whatsapp.com/send?phone=5513997275402&text=Ol%C3%A1,%20Se%C3%A9rgio,%20tudo%20bem?%0AAcabei%20de%20dar%20uma%20olhada%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os%20e%20or%C3%A7amentos.">CONTATO</a></li>
             </ul>
         </div>
-     </nav>
+       <!-- <button><a href="https://api.whatsapp.com/send?phone=5513997275402&text=Ol%C3%A1,%20Se%C3%A9rgio,%20tudo%20bem?%0AAcabei%20de%20dar%20uma%20olhada%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os%20e%20or%C3%A7amentos.">Solicite um orçamento</a></button>-->
+    </nav>
 
-     <button id="whatsappBtn"><img src="./IMG/whats_novo.png" alt=""></button>
+    <button id="whatsappBtn"><img src="./IMG/whats_novo.png" alt=""></button>
+
 
     <header>
-        <h1>Nosso Produtos</h1>
+        <img src="https://i.ibb.co/gMgfqLP/ISO-Banner-Aquecendo-Sua-Vida.jpg" alt="">
+        <img class="banner-mobile" src="./IMG/banner-mobile-manutenção-de-aquecedores.jpg" alt="" srcset="">
     </header>
 
-    <section class="produtos">
-        <div class="tituloProdutos">
-            <h4>Escolha o segmento do produto:</h4>
+    <section class="numeros">
+        <div class="numeros-esquerda">
+            <div class="icons-e-numeros">
+                <div class="instalacoes">
+                    <img width="60" height="60" src="https://i.ibb.co/7C5fBDq/Aquecedor.png" alt="icone de um aquecedor para representar as mais de 2 mil instalações da Sertec.">
+                    <p>+2000 <span><br>Instalações</span></p>
+                </div>
+                <div class="manutencoes">
+                    <img width="60" height="60" src="https://img.icons8.com/ios/50/maintenance--v1.png" alt="maintenance--v1"/>
+                    <p>+1000 <span><br>Manutenções</span></p>
+                </div>
+                <div class="clientes">
+                    <img width="60" height="60" src="https://img.icons8.com/ios/50/crowd.png" alt="crowd"/>
+                    <p>+800 <span><br>Clientes <br>Satisfeitos</span></p>
+                </div>
+            </div>
+            <div class="anosDeExperiencia">
+                <p><span>+35</span></p>
+                <p>Anos de <br>Experiência</p>
+            </div>
+            <button class="btn-saibaMais-anos"><a href="https://api.whatsapp.com/send?phone=5513997275402&text=Ol%C3%A1,%20Se%C3%A9rgio,%20tudo%20bem?%0AAcabei%20de%20dar%20uma%20olhada%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os%20e%20or%C3%A7amentos.">
+            Saiba mais</a>
+            </button>
         </div>
-        <div class="imagensProdutos">
-            <div class="produtoSegmento">
-                <img src="https://i.ibb.co/d4Pg8sB/aquecedor-Digital-Rinnai.jpg">
-                <a href=""><p>Aquecedores</p></a>
-            </div>
-            <div class="produtoSegmento">
-                <img src="https://i.ibb.co/G0ZsY4J/placa-Solar.jpg">
-                <a href=""><p>Placas Solares</p></a>
-            </div>
-            <div class="produtoSegmento">
-                <img src="https://i.ibb.co/vshxm4K/bomba.jpg">
-                <a href=""><p>Bomba</p></a>
-            </div>
+        <div class="numeros-direita">
+            <img src="https://media.istockphoto.com/id/1491196684/pt/foto/business-people-celebrating-success-in-an-office.webp?b=1&s=612x612&w=0&k=20&c=2mcf0aUoBcWk1zcXYXUUPhs56i3xa2dKOSzf9zCE-w4=" alt="">
         </div>
-        <div class="imagensProdutos">
-            <div class="produtoSegmento">
-                <img src="https://newhomeservices.com.br/app/foto/16831225176452695542147.jpg">
-                <a href=""><p>Duchas</p></a>
-            </div>
-            <div class="produtoSegmento">
-                <img src="https://newhomeservices.com.br/app/foto/168312300764526b3f49cc9.jpg">
-                <a href=""><p>Reservatórios Termossolares</p></a>
-            </div>
-            <div class="produtoSegmento">
-                <img src="https://newhomeservices.com.br/app/foto/16831337476452953373786.jpg">
-                <a href=""><p>Pressurizadores</p></a>
-            </div>
     </section>
 
-    <footer>
-        <div class="containerFooter">
-            <div class="imgSertec">
-                <img src="https://i.ibb.co/zsgYx4d/logo-sertec.png" alt="">
+    <section>
+        <div class="aquecedores">
+            <div class="aquecedores-btn">
+                    <img src="https://i.ibb.co/1rm4949/aquecedor-banho.webp" alt="Sistema de Aquecimento para banho e chuveiros.">
+                    <img src="https://i.ibb.co/fYcs0bh/aquecedor-piscina.webp" alt="Sistema de Aquecimento para piscinas.">
+                    <img src="https://i.ibb.co/Q6kxN48/energia-solar.webp" alt="Sistema para gerar energia solar.">
             </div>
-            <div class="quemSomosFooter">
-                <h3>Quem somos</h3>
-                <p>A SERTEC é uma das mais antigas empresas do segmento de aquecedores. Estamos a mais de 34 anos no mercado atendendo mais de 500 clientes com excelência e qualidade.</p>
+        <button class="btn-loja"><a href="https://api.whatsapp.com/send?phone=5513997275402&text=Ol%C3%A1,%20Se%C3%A9rgio,%20tudo%20bem?%0AAcabei%20de%20dar%20uma%20olhada%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os%20e%20or%C3%A7amentos.">
+            Saiba Mais</a>
+        </button>
+        </div>
+    </section>
+
+    <section class="aquecendoVidas-container">
+        <div class="tituloAquecendoVidas">
+            <h2>SERTEC</h2>
+            <h3>Aquecendo sua vida</h3>
+        </div>
+        <div class="conteudos-aquecendoVidas">
+            <div class="aquecendoVidas-esquerda">
+                <p>Atendemos:</p>
+                <ul>
+                    <li>Indústrias;</li>
+                    <li><span>Hoteis/Moteis;</span></li>
+                    <li>Condomínios;</li>
+                    <li><span>Casas/Apartamentos;</span></li>
+                    <li>Academias;</li>
+                    <li><span>Shoppings;</span></li>
+                    <li>Entre outros...</li>
+                </ul>
             </div>
-            <div class="venhaNosConhecer">
-                <h3>Venha nos conhecer</h3>
-                <p>R. Antônio Etzel, 70 - Vila Clementino, São Paulo - SP, 04044-030</p>
-                <p>Telefone: (13) 3258-6234</p>
-                <p>sergiovassao.sertec@gmail.com</p>
-                <p>Aberto de Seg a Sex das 08h às 18h</p>
+            <div class="aquecendoVidas-direita">
+                <img src="https://i.ibb.co/yhgtxZt/mulher-na-cabana.png" alt="">
             </div>
         </div>
-        <div class="desenvolvimento">
-            <div class="linhaTop"></div>
-            <p>Developed by <a href="https://novo-portfolio-ten.vercel.app/">Gabriel Rosa</a></p>
+    </section>
+
+    <section class="sobre" id="sobre">
+       <h2>Sobre a SERTEC</h2>
+       <div class="sobre-corpo">
+            <img src="https://i.ibb.co/c2W8PWY/anos-de-experiencia.jpg" alt="Especialistas em aquecedores.">
+            <div class="texto-experiencia">
+                <p>A Sertec está no mercado brasileiro desde 1988, sendo uma das empresas <strong>especialistas</strong> em aquecedores mais antigas do mercado e autorizada dos melhores fabricantes.</p>
+                <br>
+                <p>É isso mesmo! Estamos há quase 35 anos no mercado buscando garantir o conforto, qualidade, satisfação e segurança de nossos clientes. Além de trabalhar com os melhores equipamentos, produtos e marcas do mundo, também temos o certificado ISO 2020 e 2021. Temos profissionais qualificados e certificados ao seu dispor para resolver todos os seus problemas!</p>
+                <br>
+                <p>Somos responsáveis pelo aquecimento em 70% dos hotéis e motéis do Litoral Paulista Norte e Sul, Baixada Santista e Vale do Ribeira.</p>
+                <br>
+                <p>Atendemos em toda Grande São Paulo, Campos do Jordão e Mato Grosso do Sul.</p>
+                <br>
+                <p>Fomos premiados em fevereiro de 2020 com o ISO Quality 2020 de melhor empresa no segmento de aquecimento em hotéis do Litoral Paulista.</p>
+                <button><a href="https://api.whatsapp.com/send?phone=5513997275402&text=Ol%C3%A1,%20Se%C3%A9rgio,%20tudo%20bem?%0AAcabei%20de%20dar%20uma%20olhada%20no%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os%20e%20or%C3%A7amentos.">Entre em contato</a></button>
+            </div>
         </div>
-     </footer>
+    </section>
 
+    <section class="avaliacoes">
+        <div class="carousel-container">
+            <div class="carousel-slide">
+                <h3>Rafael Pracidelle</h3>
+                    <img src="https://i.ibb.co/KcZrv5N/estrelas.png" alt="cinco estrelas de avaliação">
+                <p>Ótima empresa.</p>
+            </div>
+            <div class="carousel-slide">
+                <h3>Luiz Ferro</h3>
+                    <img src="https://i.ibb.co/KcZrv5N/estrelas.png" alt="cinco estrelas de avaliação">
+                <p>Excelente trabalho. Pontual, educado, tinhas as peças para troca e fez um ótimo trabalho.</p>
+            </div>
+            <div class="carousel-slide">
+                <h3>CLAUDIO</h3>
+                    <img src="https://i.ibb.co/KcZrv5N/estrelas.png" alt="cinco estrelas de avaliação">
+                <p>Excelente serviço, fui atendido muito bem, desde a cotação até a instalação, só elogios.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="parceiros">
+        <h2>Nossos Parceiros</h2>
+        <div class="banner-parceiros">
+            <div><img src="https://i.ibb.co/Ldk1Xbt/komeco.png" alt=""></div>
+            <div><img src="https://i.ibb.co/G9h7RTj/lorenzetti.png" alt=""></div>
+            <div><img src="https://i.ibb.co/YRBSwKN/rheem.png" alt=""></div>
+            <div><img src="https://i.ibb.co/wpCgKqf/rinnai.png" alt=""></div>
+            <div><img src="https://i.ibb.co/Vp22y5d/tarkett.png" alt=""></div>
+            <div><img src="https://i.ibb.co/zQ26CF3/inova.png" alt=""></div>
+            <div><img src="https://i.ibb.co/PQSq6hy/yume.jpg" alt=""></div>
+            <div><img src="https://i.ibb.co/sm1Kpx5/harman.webp" alt=""></div>
+            <div><img src="https://i.ibb.co/xFg1H8f/rowa.png" alt=""></div>
+            <div><img src="https://i.ibb.co/HDpRvH3/megapress.png" alt=""></div>
+        </div>
+    </section>
 
-     <script src="app.js"></script>
+        <!-- Footer -->
+
+        <footer>
+            <div class="containerFooter">
+                <div class="imgSertec">
+                    <img src="https://i.ibb.co/zsgYx4d/logo-sertec.png" alt="">
+                </div>
+                <div class="quemSomosFooter">
+                    <h3>Quem somos</h3>
+                    <p>A SERTEC é uma das mais antigas empresas do segmento de aquecedores. Estamos a mais de 34 anos no mercado atendendo mais de 500 clientes com excelência e qualidade.</p>
+                </div>
+                <div class="venhaNosConhecer">
+                    <h3>Venha nos conhecer</h3>
+                    <p>R. Antônio Etzel, 70 - Vila Clementino, São Paulo - SP, 04044-030</p>
+                    <p>Telefone: (13) 3258-6234</p>
+                    <p>sergiovassao.sertec@gmail.com</p>
+                    <p>Aberto de Seg a Sex das 08h às 18h</p>
+                </div>
+            </div>
+            <div class="desenvolvimento">
+                <div class="linhaTop"></div>
+                <p>Developed by <a href="https://novo-portfolio-ten.vercel.app/">Gabriel Rosa</a></p>
+            </div>
+         </footer>
+
+         <script src="app.js"></script>
 </body>
 </html>
