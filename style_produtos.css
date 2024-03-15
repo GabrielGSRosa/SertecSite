@@ -132,11 +132,14 @@ header hr {
 .produtos {
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;;
 }
 
 .imagensProdutos {
     display: flex;
     flex-direction: row;
+    margin: 25px;
 }
 
 .produtoSegmento {
