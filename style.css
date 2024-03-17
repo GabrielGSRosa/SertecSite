@@ -568,10 +568,15 @@ footer div p {
 /* regra geral para dispositivos móveis */
 @media only screen and (max-width: 600px) {
     /* Navbar */
-
+    nav {
+        width: 100vw;
+        max-width: 600px;
+    }
 
     /* Header */
     header {
+        width: 100vw;
+        max-width: 600px;
         height: auto;
     }
 
@@ -579,7 +584,16 @@ footer div p {
         height: auto;
     }
 
+    /* Section Números */
+    .numeros-direita {
+        display: none;
+    }
+
     /* Section 1 */
+    .aquecedores-btn {
+        border: 1px solid red;
+    }
+
     section .aquecedores-btn img {
         width: 30%; 
     }
@@ -587,6 +601,21 @@ footer div p {
     section .aquecedores .btn-loja {
         width: 50%;
         margin-left: 0;
+    }
+
+    /* Aquecendo Vidas */
+    .aquecendoVidas-container {
+        padding-bottom: 30px;
+    }
+
+    .aquecendoVidas-esquerda {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .aquecendoVidas-direita {
+        display: none;
     }
 
     /* Sobre */
@@ -602,6 +631,7 @@ footer div p {
 
     .sobre-corpo img {
         width: 100%;
+        margin-bottom: 20px;
     }
 
     /* Entrar em Contato BTN */
@@ -611,20 +641,75 @@ footer div p {
 
     /* Footer */
     footer {
+        background-color: #182F45;
+        text-align: start;
+    }
+    
+    footer img {
+        display: none;
+    }
+    
+    footer p{
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    footer h3 {
+        color: #fff;
+        font-size: 21px;
+    }
+    
+    footer a {
+        color: #fff;
+    }
+    
+    footer div {
         padding: 20px;
     }
-
-    footer h2 {
-        font-size: 28px;
-        margin-top: 20px;
+    
+    footer div p {
+        padding: 5px;
+    }
+    
+    .containerFooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        border: 1px solid red;
+    }
+    
+    .quemSomosFooter {
+        width: 36%;
+        border-right: 1px solid white;
+    }
+    
+    .venhaNosConhecer {
+        width:36%;
     }
 
-    .redes-sociais div {
-        margin: 10px;
+    .email {
+        display: none;
     }
+    
+    .desenvolvimento {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .linhaTop {
+        margin: 0 auto;
+        border-top: 1px solid white;
+        width: 60%;
+    }    
 
-    .redes-sociais p {
-        margin: 5px 0;
+    /* Botão flutuante WPP */
+    #whatsappBtn {
+        position: fixed;
+        bottom: 20px;
+        right: -300px;
+        padding: 10px 20px;
+        cursor: pointer;
     }
 }
 
