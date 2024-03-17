@@ -590,10 +590,6 @@ footer div p {
     }
 
     /* Section 1 */
-    .aquecedores-btn {
-        border: 1px solid red;
-    }
-
     section .aquecedores-btn img {
         width: 30%; 
     }
@@ -676,7 +672,6 @@ footer div p {
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        border: 1px solid red;
     }
     
     .quemSomosFooter {
