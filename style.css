@@ -573,6 +573,47 @@ footer div p {
         max-width: 600px;
     }
 
+    /* Estilos para o botão do menu hamburguer */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
+  
+  /* Estilos para o menu */
+  .menu {
+    display: none; /* Esconde o menu por padrão */
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Estilo para mostrar o menu quando a classe 'show' é adicionada */
+  .menu.show {
+    display: block;
+  }
+  
+  /* Estilos para o submenu */
+  .has-dropdown:hover .dropdown {
+    display: none; /* Mostra o submenu quando o item de menu com submenu é hover */
+  }
+  
+
     /* Header */
     header {
         width: 100vw;
