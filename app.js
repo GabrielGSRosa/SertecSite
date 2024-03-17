@@ -1,23 +1,6 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const hamburger = document.getElementById('hamburger');
-  const menu = document.getElementById('menu');
-
-  hamburger.addEventListener('click', function () {
-      menu.classList.toggle('show');
-  });
-
-  // Adiciona evento de mouseover e mouseout para exibir ou ocultar o submenu
-  const hasDropdownItems = document.querySelectorAll('.has-dropdown');
-
-  hasDropdownItems.forEach(function (item) {
-      item.addEventListener('mouseover', function () {
-          item.querySelector('.dropdown').classList.add('show');
-      });
-
-      item.addEventListener('mouseout', function () {
-          item.querySelector('.dropdown').classList.remove('show');
-      });
-  });
+hamburger.addEventListener('click', function () {
+  console.log("Botão de menu hamburguer clicado");
+  menu.classList.toggle('show');
 });
 
   document.getElementById("whatsappBtn").addEventListener("click", function() {
