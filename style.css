@@ -572,7 +572,6 @@ footer div p {
     nav {
         width: 100vw;
         max-width: 600px;
-        border: 1px solid;
     }
 
     /* Estilos para o botão do menu hamburguer */
@@ -968,3 +967,4 @@ footer div p {
         cursor: pointer;
     }
 }
+
