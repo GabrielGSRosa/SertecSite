@@ -645,23 +645,16 @@ footer div p {
     }
 
     .numeros {
-        display: flex;
-        justify-content: space-around;
-        font-size: 20px;
-        font-weight: 500;
-        margin-bottom: 30px;
+        font-size: 18px;
+        font-weight: 400;
     }
     
-    .numeros-esquerda p, span {
-        color: #1b1b1b;
-    }
-    
-    .numeros-esquerda {
+    .instalacoes, .manutencoes, .clientes {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        padding: 14px;
+        text-align: center;
         align-items: center;
-        margin: auto;
     }
 
     /* Section 1 */
@@ -712,66 +705,30 @@ footer div p {
 
     /* Footer */
     footer {
-        background-color: #182F45;
-        text-align: start;
+        height: 450px;
     }
-    
+
+    .containerFooter {
+        padding: 0;
+        margin: 0;
+    }
+
     footer img {
         display: none;
     }
-    
-    footer p{
-        color: #fff;
-        font-size: 18px;
-    }
-    
-    footer h3 {
-        color: #fff;
-        font-size: 21px;
-    }
-    
-    footer a {
-        color: #fff;
-    }
-    
-    footer div {
-        padding: 20px;
-    }
-    
-    footer div p {
-        padding: 5px;
-    }
-    
-    .containerFooter {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-    }
-    
+
     .quemSomosFooter {
-        width: 36%;
-        border-right: 1px solid white;
-    }
-    
-    .venhaNosConhecer {
-        width:36%;
+        width: 100%;
+        border: none;
+        padding: 0;
+        margin: 0;
+
     }
 
-    .email {
+    .venhaNosConhecer {
         display: none;
     }
-    
-    .desenvolvimento {
-        align-items: center;
-        text-align: center;
-    }
-    
-    .linhaTop {
-        margin: 0 auto;
-        border-top: 1px solid white;
-        width: 60%;
-    }    
+
 
     /* Botão flutuante WPP */
     #whatsappBtn {
