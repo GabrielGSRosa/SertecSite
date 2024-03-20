@@ -578,7 +578,7 @@ footer div p {
 .hamburger {
     display: flex;
     flex-direction: column;
-    cursor: pointer;
+    cursor: pointer; 
   }
   
   .line {
@@ -648,7 +648,7 @@ footer div p {
         font-size: 18px;
         font-weight: 400;
     }
-    
+
     .instalacoes, .manutencoes, .clientes {
         display: flex;
         flex-direction: column;
@@ -676,6 +676,15 @@ footer div p {
         display: flex;
         align-items: center;
         flex-direction: column;
+        margin-left: 40px;
+        width: 84%;
+    }
+
+    .conteudos-aquecendoVidas ul li {
+        color: #1b1b1b;
+        font-size: 26px;
+        font-weight: bold;
+        margin-right: 0px;
     }
 
     .aquecendoVidas-direita {
