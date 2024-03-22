@@ -365,44 +365,44 @@ footer div p {
     }
 
     /* Estilos para o botão do menu hamburguer */
-.hamburger {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer; 
-  }
-  
-  .line {
-    width: 30px;
-    height: 3px;
-    background-color: black;
-    margin: 5px 0;
-  }
-  
-  /* Estilos para o menu */
-  .menu {
-    display: none; /* Esconde o menu por padrão */
-    list-style: none;
-    padding: 0;
-  }
-  
-  .menu li {
-    margin-bottom: 10px;
-  }
-  
-  .menu li a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  /* Estilo para mostrar o menu quando a classe 'show' é adicionada */
-  .menu.show {
-    display: block;
-  }
-  
-  /* Estilos para o submenu */
-  .has-dropdown:hover .dropdown {
-    display: none; /* Mostra o submenu quando o item de menu com submenu é hover */
-  }
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer; 
+      }
+      
+      .line {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 5px 0;
+      }
+      
+      /* Estilos para o menu */
+      .menu {
+        display: none; /* Esconde o menu por padrão */
+        list-style: none;
+        padding: 0;
+      }
+      
+      .menu li {
+        margin-bottom: 10px;
+      }
+      
+      .menu li a {
+        text-decoration: none;
+        color: black;
+      }
+      
+      /* Estilo para mostrar o menu quando a classe 'show' é adicionada */
+      .menu.show {
+        display: block;
+      }
+      
+      /* Estilos para o submenu */
+      .has-dropdown:hover .dropdown {
+        display: none; /* Mostra o submenu quando o item de menu com submenu é hover */
+      }
   
   /* Titulo */ 
   header h1{
@@ -453,3 +453,381 @@ footer div p {
         width: 50%;
     }
 }
+
+/* regra geral para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+
+    /* Navbar */
+    nav {
+        width: 100vw;
+        max-width: 600px;
+    }
+
+    /* Estilos para o botão do menu hamburguer */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer; 
+  }
+  
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
+  
+  /* Estilos para o menu */
+  .menu {
+    display: none; /* Esconde o menu por padrão */
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Estilo para mostrar o menu quando a classe 'show' é adicionada */
+  .menu.show {
+    display: block;
+  }
+  
+  /* Estilos para o submenu */
+  .has-dropdown:hover .dropdown {
+    display: none; /* Mostra o submenu quando o item de menu com submenu é hover */
+  }
+  
+
+    /* Header */
+    header {
+        width: 100vw;
+        max-width: 600px;
+        height: auto;
+    }
+
+     /* Header */
+     header {
+        width: 100vw;
+        max-width: 600px;
+        height: auto;
+    }
+
+    header .bannerDesktop {
+        display: none;
+    }
+
+    header .banner-mobile {
+        display: flex;
+        height: auto;
+        width: 100%;
+    }
+
+    /* Section Números */
+    .numeros-direita {
+        display: none;
+    }
+
+    .numeros {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .instalacoes, .manutencoes, .clientes {
+        display: flex;
+        flex-direction: column;
+        padding: 14px;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Section 1 */
+    section .aquecedores-btn img {
+        width: 30%; 
+    }
+
+    section .aquecedores .btn-loja {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    /* Aquecendo Vidas */
+    .aquecendoVidas-container {
+        padding-bottom: 30px;
+    }
+
+    .aquecendoVidas-esquerda {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 40px;
+        width: 84%;
+    }
+
+    .aquecendoVidas-esquerda {
+        padding-left: 0px;
+    }
+
+    .conteudos-aquecendoVidas ul li {
+        color: #1b1b1b;
+        font-size: 26px;
+        font-weight: bold;
+        margin-right: 0px;
+    }
+
+    .aquecendoVidas-direita {
+        display: none;
+    }
+
+    /* Sobre */
+    .sobre-corpo {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .sobre-corpo p {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .sobre-corpo img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Entrar em Contato BTN */
+    .entrar-em-contato button {
+        width: 80%;
+    }
+
+    /* Footer */
+    footer {
+        height: 450px;
+    }
+
+    .containerFooter {
+        padding: 0;
+        margin: 0;
+    }
+
+    footer img {
+        display: none;
+    }
+
+    .quemSomosFooter {
+        width: 100%;
+        border: none;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .venhaNosConhecer {
+        display: none;
+    }
+
+
+    /* Botão flutuante WPP */
+    #whatsappBtn {
+        position: fixed;
+        right: -250px;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+     /* Navbar */
+     nav {
+        width: 1054px;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    /* Estilos para o botão do menu hamburguer */
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+  }
+  
+  /* Estilos para o menu */
+  .menu {
+    display: none; /* Esconde o menu por padrão */
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* Estilo para mostrar o menu quando a classe 'show' é adicionada */
+  .menu.show {
+    display: block;
+  }
+  
+  /* Estilos para o submenu */
+  .has-dropdown:hover .dropdown {
+    display: none; /* Mostra o submenu quando o item de menu com submenu é hover */
+  }
+  
+
+    /* Header */
+    header {
+        width: 100vw;
+        max-width: 600px;
+        height: auto;
+    }
+
+    header .bannerDesktop {
+        height: auto;
+        width: 100vw;
+    }
+
+    /* Section Números */
+    .numeros-direita {
+        display: none;
+    }
+
+    /* Section 1 */
+    section .aquecedores-btn img {
+        width: 30%; 
+    }
+
+    section .aquecedores .btn-loja {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    /* Aquecendo Vidas */
+    .aquecendoVidas-container {
+        padding-bottom: 30px;
+    }
+
+    .aquecendoVidas-esquerda {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .aquecendoVidas-esquerda {
+        padding-left: 0px;
+    }
+
+    .aquecendoVidas-direita {
+        display: none;
+    }
+
+    /* Sobre */
+    .sobre-corpo {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .sobre-corpo p {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .sobre-corpo img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Entrar em Contato BTN */
+    .entrar-em-contato button {
+        width: 80%;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #182F45;
+        text-align: start;
+    }
+    
+    footer img {
+        display: none;
+    }
+    
+    footer p{
+        color: #fff;
+        font-size: 18px;
+    }
+    
+    footer h3 {
+        color: #fff;
+        font-size: 21px;
+    }
+    
+    footer a {
+        color: #fff;
+    }
+    
+    footer div {
+        padding: 20px;
+    }
+    
+    footer div p {
+        padding: 5px;
+    }
+    
+    .containerFooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    
+    .quemSomosFooter {
+        width: 36%;
+        border-right: 1px solid white;
+    }
+    
+    .venhaNosConhecer {
+        width:36%;
+    }
+
+    .email {
+        display: none;
+    }
+    
+    .desenvolvimento {
+        align-items: center;
+        text-align: center;
+    }
+    
+    .linhaTop {
+        margin: 0 auto;
+        border-top: 1px solid white;
+        width: 60%;
+    }    
+
+    /* Botão flutuante WPP */
+    #whatsappBtn {
+        position: fixed;
+        bottom: 20px;
+        right: -100px;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+}
+
