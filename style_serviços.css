@@ -230,6 +230,10 @@ header {
     width: 80%;
 }
 
+.resumo img {
+    border-radius: 20px;
+}
+
 .textos {
     font-size: 21px;
 }
