@@ -125,77 +125,11 @@ p {
     }
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-    font-size: 31px;
-    margin-top: 30px;
-}
-
-/* Produtos Corpo */
-
-.aquecedoresCorpo {
-    display: flex;
-    justify-content: space-around;
-}
-
-.marcas ol {
-    list-style: none;
-}
-
-.products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.product {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 30px;
-    padding: 20px;
-    width: 300px;
-}
-
-.product h3 {
-    color: #333;
-    font-size: 20px;
-    margin-top: 0;
-}
-
-.product h4 {
-    color: #666;
-    font-size: 18px;
-    margin-top: 5px;
-}
-
-.product p {
-    color: #888;
-}
-
-.product button {
-    background-color: #000746;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 16px;
-    padding: 10px 20px;
-    margin-top: 10px;
-}
-
-.product button:hover {
-    background-color: #0056b3;
-}
-
-
 /* Footer */
 footer {
     background-color: #182F45;
     text-align: start;
+    margin-top: 50px;
 }
 
 footer img {

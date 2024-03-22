@@ -81,6 +81,10 @@ p {
     font-size: 16px;
 }
 
+.menu a:hover {
+    background-color: grey;
+}
+
 .dropdown {
     display: none;
     position: absolute;
@@ -279,11 +283,15 @@ section .aquecedores-btn img {
     color: #1b1b1b;
     font-size: 26px;
     font-weight: bold;
-    margin-right: 100px; 
+    margin-right: 200px; 
 }
 
 .conteudos-aquecendoVidas ul li span {
     color: #0B567E;
+}
+
+.aquecendoVidas-esquerda {
+    padding-left: 200px;
 }
 
 .aquecendoVidas-direita {
@@ -680,6 +688,10 @@ footer div p {
         width: 84%;
     }
 
+    .aquecendoVidas-esquerda {
+        padding-left: 0px;
+    }
+
     .conteudos-aquecendoVidas ul li {
         color: #1b1b1b;
         font-size: 26px;
@@ -834,6 +846,10 @@ footer div p {
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
+
+    .aquecendoVidas-esquerda {
+        padding-left: 0px;
     }
 
     .aquecendoVidas-direita {
